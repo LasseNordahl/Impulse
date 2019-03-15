@@ -1,68 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Impulse, HackTech 2019 Project Repository
 
-## Available Scripts
+Winner of the Most Aesthetic/Well-Designed award!
 
-In the project directory, you can run:
+# Project
 
-### `npm start`
+When we open our email, we see emails that originate from internship applications we filed months ago. Applications that we don't even remember. Attempting to track this type of work manually is exhausting as well. We wanted to fix this problem so we went out to build an app that automates this process for us and does all the heavy work load. Impulse allows users to easily access all their applications in a visually appealing setting and lists in chronological order of companies applied to, position applied for, content of the email, and stage of the application.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# What it does
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Impulse uses Google's gmail API to authenticate with a person's email and it tracks which emails are from internship applications. It then loads these emails into a database where it shows information on each email, including company name, logo, status, content of the email, and the time line. Additionally, if a company sends another email, it overwrites the existing entry in the database to accurately reflect the new email and showcases the time line changes.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# How we built it
 
-### `npm run build`
+Our team built it using React for the front-end and node.js for the back-end.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+For the front-end we used React material UI component library to implement our design and to deliver a pleasant user experience.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+For the back-end we used node.js and started by getting the authentication (oAuth2) working with gmail, parsing through each email, and then analyzing each email and putting it into a category depending on the content stored in the email.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[Devpost](https://devpost.com/software/impulse-kuwe0b)
